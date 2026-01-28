@@ -1,0 +1,33 @@
+2026-01-28 11:07:22.278 +03:00 [INF] Starting Company.Template.Api
+2026-01-28 11:07:22.601 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-01-28 11:08:34.160 +03:00 [INF] Starting Company.Template.Api
+2026-01-28 11:08:34.387 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-01-28 11:12:33.509 +03:00 [INF] Creating product with name: ccc
+2026-01-28 11:12:34.142 +03:00 [INF] Creating product with name: ccc
+2026-01-28 11:12:34.148 +03:00 [DBG] Adding product with ID: "59144b58-c0ee-47fb-a470-5e5c73256b1f"
+2026-01-28 11:12:34.786 +03:00 [INF] Handling ProductCreatedEvent for product "59144b58-c0ee-47fb-a470-5e5c73256b1f"
+2026-01-28 11:12:34.797 +03:00 [INF] Demo Mode: Would publish message to exchange product.events with routing key product.created. Message: {"ProductId":"59144b58-c0ee-47fb-a470-5e5c73256b1f","Name":"ccc","Description":"string","Price":1,"CreatedAt":"2026-01-28T08:12:34.1463462Z","EventId":"852bf73c-e593-4110-bc09-9ec216667060","EventTime":"2026-01-28T08:12:34.7914483Z","$type":"ProductCreatedIntegrationEvent"}
+2026-01-28 11:12:34.818 +03:00 [INF] Published ProductCreatedIntegrationEvent for product "59144b58-c0ee-47fb-a470-5e5c73256b1f"
+2026-01-28 11:12:34.820 +03:00 [INF] Product created successfully with ID: "59144b58-c0ee-47fb-a470-5e5c73256b1f"
+2026-01-28 11:12:34.903 +03:00 [INF] HTTP POST /api/Products responded 201 in 1606.4883 ms
+2026-01-28 11:13:05.683 +03:00 [INF] Listing products with page 1, size 10
+2026-01-28 11:13:05.707 +03:00 [INF] Getting products page 1 with size 10
+2026-01-28 11:13:05.738 +03:00 [DBG] Getting products with skip: 0, take: 10
+2026-01-28 11:13:05.978 +03:00 [DBG] Getting total product count
+2026-01-28 11:13:06.008 +03:00 [INF] Retrieved 1 products out of 1
+2026-01-28 11:13:06.014 +03:00 [INF] HTTP GET /api/Products responded 200 in 351.7912 ms
+2026-01-28 11:13:21.013 +03:00 [INF] Getting product with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:21.020 +03:00 [INF] Getting product with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:21.025 +03:00 [DBG] Getting product by ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:21.089 +03:00 [INF] Product not found with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:21.093 +03:00 [INF] HTTP GET /api/Products/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 404 in 96.5259 ms
+2026-01-28 11:13:47.638 +03:00 [INF] Updating product with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:47.646 +03:00 [INF] Updating product with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:47.654 +03:00 [DBG] Getting product by ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:47.663 +03:00 [WRN] Product not found with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:13:47.670 +03:00 [INF] HTTP PUT /api/Products/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 404 in 42.0640 ms
+2026-01-28 11:14:03.639 +03:00 [INF] Updating product with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:14:03.643 +03:00 [INF] Updating product with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:14:03.649 +03:00 [DBG] Getting product by ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:14:03.657 +03:00 [WRN] Product not found with ID: "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+2026-01-28 11:14:03.662 +03:00 [INF] HTTP PUT /api/Products/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 404 in 28.3558 ms
