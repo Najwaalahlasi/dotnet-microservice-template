@@ -1,2 +1,60 @@
 2026-01-28 11:09:04.556 +03:00 [INF] Starting Company.Template.Api
 2026-01-28 11:09:04.780 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-01-28 21:17:45.403 +03:00 [INF] Starting Company.Template.Api
+2026-01-28 21:17:45.702 +03:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-01-28 21:17:58.637 +03:00 [INF] HTTP GET / responded 404 in 61.8848 ms
+2026-01-28 21:18:00.126 +03:00 [INF] HTTP GET / responded 404 in 1.6847 ms
+2026-01-28 21:18:01.946 +03:00 [INF] HTTP GET / responded 404 in 3.9497 ms
+2026-01-28 21:18:02.226 +03:00 [INF] HTTP GET / responded 404 in 0.0663 ms
+2026-01-28 21:18:02.479 +03:00 [INF] HTTP GET / responded 404 in 0.0877 ms
+2026-01-28 21:18:25.189 +03:00 [INF] HTTP GET / responded 404 in 0.0995 ms
+2026-01-28 21:18:27.876 +03:00 [INF] HTTP GET / responded 404 in 0.0698 ms
+2026-01-28 21:18:29.004 +03:00 [INF] HTTP GET / responded 404 in 0.0781 ms
+2026-01-28 21:18:29.210 +03:00 [INF] HTTP GET / responded 404 in 0.0630 ms
+2026-01-28 21:18:29.395 +03:00 [INF] HTTP GET / responded 404 in 0.0708 ms
+2026-01-28 21:18:29.571 +03:00 [INF] HTTP GET / responded 404 in 0.0642 ms
+2026-01-28 21:18:29.933 +03:00 [INF] HTTP GET / responded 404 in 3.8049 ms
+2026-01-28 21:18:30.144 +03:00 [INF] HTTP GET / responded 404 in 0.0573 ms
+2026-01-28 21:18:36.986 +03:00 [INF] HTTP GET / responded 404 in 0.0749 ms
+2026-01-28 21:18:37.219 +03:00 [INF] HTTP GET / responded 404 in 0.0697 ms
+2026-01-28 21:18:58.513 +03:00 [INF] HTTP GET / responded 404 in 0.0767 ms
+2026-01-28 21:19:17.297 +03:00 [INF] HTTP GET / responded 404 in 0.0719 ms
+2026-01-28 21:20:15.009 +03:00 [INF] HTTP GET / responded 404 in 0.0788 ms
+2026-01-28 21:22:06.147 +03:00 [INF] Creating product with name: sssss
+2026-01-28 21:22:06.514 +03:00 [INF] Creating product with name: sssss
+2026-01-28 21:22:06.522 +03:00 [DBG] Adding product with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:07.153 +03:00 [INF] Handling ProductCreatedEvent for product "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:07.162 +03:00 [INF] Demo Mode: Would publish message to exchange product.events with routing key product.created. Message: {"ProductId":"637c1997-69eb-455d-a9af-1801712cafda","Name":"sssss","Description":"sssssssssssssssss","Price":2,"CreatedAt":"2026-01-28T18:22:06.5200503Z","EventId":"6cf15bad-8a1a-484f-9f06-f8de69a9f1fa","EventTime":"2026-01-28T18:22:07.1554122Z","$type":"ProductCreatedIntegrationEvent"}
+2026-01-28 21:22:07.180 +03:00 [INF] Published ProductCreatedIntegrationEvent for product "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:07.182 +03:00 [INF] Product created successfully with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:07.271 +03:00 [INF] HTTP POST /api/Products responded 201 in 1249.3063 ms
+2026-01-28 21:22:31.003 +03:00 [INF] Listing products with page 1, size 10
+2026-01-28 21:22:31.010 +03:00 [INF] Getting products page 1 with size 10
+2026-01-28 21:22:31.019 +03:00 [DBG] Getting products with skip: 0, take: 10
+2026-01-28 21:22:31.273 +03:00 [DBG] Getting total product count
+2026-01-28 21:22:31.323 +03:00 [INF] Retrieved 1 products out of 1
+2026-01-28 21:22:31.334 +03:00 [INF] HTTP GET /api/Products responded 200 in 352.7785 ms
+2026-01-28 21:22:50.867 +03:00 [INF] Getting product with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:50.871 +03:00 [INF] Getting product with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:50.875 +03:00 [DBG] Getting product by ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:50.913 +03:00 [INF] Product found with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:22:50.916 +03:00 [INF] HTTP GET /api/Products/637c1997-69eb-455d-a9af-1801712cafda responded 200 in 61.2816 ms
+2026-01-28 21:24:31.446 +03:00 [INF] Updating product with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.457 +03:00 [INF] Updating product with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.459 +03:00 [DBG] Getting product by ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.474 +03:00 [DBG] Updating product with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.486 +03:00 [INF] Handling ProductUpdatedEvent for product "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.489 +03:00 [INF] Demo Mode: Would publish message to exchange product.events with routing key product.updated. Message: {"ProductId":"637c1997-69eb-455d-a9af-1801712cafda","Name":"xx","Description":"xx","Price":88,"UpdatedAt":"2026-01-28T18:24:31.4731714Z","EventId":"42dbc1a7-7820-4757-a3b0-85c2e8d31786","EventTime":"2026-01-28T18:24:31.4885094Z","$type":"ProductUpdatedIntegrationEvent"}
+2026-01-28 21:24:31.503 +03:00 [INF] Published ProductUpdatedIntegrationEvent for product "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.505 +03:00 [INF] Product updated successfully with ID: "637c1997-69eb-455d-a9af-1801712cafda"
+2026-01-28 21:24:31.507 +03:00 [INF] HTTP PUT /api/Products/637c1997-69eb-455d-a9af-1801712cafda responded 200 in 71.0099 ms
+2026-01-28 21:40:24.948 +03:00 [INF] HTTP GET / responded 404 in 0.0678 ms
+2026-01-28 21:40:39.099 +03:00 [INF] Listing products with page 1, size 10
+2026-01-28 21:40:39.102 +03:00 [INF] Getting products page 1 with size 10
+2026-01-28 21:40:39.119 +03:00 [DBG] Getting products with skip: 0, take: 10
+2026-01-28 21:40:39.129 +03:00 [DBG] Getting total product count
+2026-01-28 21:40:39.134 +03:00 [INF] Retrieved 1 products out of 1
+2026-01-28 21:40:39.136 +03:00 [INF] HTTP GET /api/Products responded 200 in 37.5602 ms
+2026-01-28 21:43:19.307 +03:00 [INF] Starting Company.Template.Api
+2026-01-28 21:53:19.625 +03:00 [INF] Starting Company.Template.Api
+2026-01-28 21:53:20.809 +03:00 [INF] HTTP GET / responded 404 in 60.2879 ms
