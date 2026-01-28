@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: company-template-postgres
+    environment:
+      POSTGRES_DB: CompanyTemplateDb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - company-template-network
+
+  # RabbitMQ Message Broker
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: company-template-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"   # AMQP port
+      - "15672:15672" # Management UI
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - company-template-network
+
+  # Company Template API
+  api:
+    build:
+      context: .
+      dockerfile: src/Company.Template.Api/Dockerfile
+    container_name: company-template-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=CompanyTemplateDb;Username=postgres;Password=postgres
+      - ConnectionStrings__RabbitMQ=amqp://guest:guest@rabbitmq:5672/
+    ports:
+      - "5000:80"
+    depends_on:
+      - postgres
+      - rabbitmq
+    networks:
+      - company-template-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  rabbitmq_data:
+
+networks:
+  company-template-network:
+    driver: bridge
