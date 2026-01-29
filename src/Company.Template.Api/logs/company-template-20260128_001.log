@@ -58,3 +58,5 @@
 2026-01-28 21:43:19.307 +03:00 [INF] Starting Company.Template.Api
 2026-01-28 21:53:19.625 +03:00 [INF] Starting Company.Template.Api
 2026-01-28 21:53:20.809 +03:00 [INF] HTTP GET / responded 404 in 60.2879 ms
+2026-01-28 22:12:50.811 +03:00 [INF] Starting Company.Template.Api
+2026-01-28 22:12:52.086 +03:00 [INF] HTTP GET / responded 404 in 201.6979 ms
